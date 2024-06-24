@@ -18,7 +18,7 @@ if (isset($headers['PHPLINUXL200'])) {
     echo "Header PHPLINUXL200 Found! Value: " . $headers['PHPLINUXL200'] . $NL;
     echo "Succesfully completed PHP Linux L200 Lab. " . date('Y-m-d H:i:s UTC', time()) . $NL;
 } else {
-    echo "Header PHPLINUXL200 NOT FOUND!" . $NL;
+    echo $headers . $NL;
 }
 
 ?>
