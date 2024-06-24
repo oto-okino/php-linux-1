@@ -10,7 +10,7 @@ $NL = "\r\n";
 
 $request = $_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'] . "/echo.php";
 
-$headers = get_headers($request, 1);
+$headers = get_headers($request, 0);
 
 echo "Azure App Service L200 - OSS - PHP Linux" . $NL;
 
