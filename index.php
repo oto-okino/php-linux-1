@@ -12,7 +12,7 @@ $request = $_SERVER['HTTP_X_FORWARDED_PROTO'] . "://" . $_SERVER['HTTP_HOST'] . 
 
 $headers = get_headers($request, 0);
 
-echo "Azure App Service L200 - OSS - PHP Linux" . $NL;
+echo "Azure App Service L200 - OSS - PHP Linux" . $NL . $request . $NL . $headers;
 
 if (isset($headers['PHPLINUXL200'])) {
     echo "Header PHPLINUXL200 Found! Value: " . $headers['PHPLINUXL200'] . $NL;
